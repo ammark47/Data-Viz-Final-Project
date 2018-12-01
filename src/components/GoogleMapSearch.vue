@@ -113,7 +113,7 @@
         const apiEndpoint = 'https://data.cityofnewyork.us/resource/fhrw-4uyv.json?'
         var serviceRequests = apiEndpoint
         console.log("original")
-        serviceRequests += '&$limit=100'
+        serviceRequests += '&$limit=50000'
 
         axios
         .get(serviceRequests)
@@ -168,7 +168,7 @@
         }
  
         // limit responses
-       initServiceRequests += '&$limit=100'
+       initServiceRequests += '&$limit=50000'
 
         axios
         .get(initServiceRequests)
